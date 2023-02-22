@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import MasterLayout from '../components/layouts/MasterLayout';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+	return (
+		<MasterLayout>
+			<Component {...pageProps} />
+		</MasterLayout>
+	);
 }
 
-export default MyApp
+export default MyApp;
